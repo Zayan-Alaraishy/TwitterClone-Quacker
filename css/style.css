@@ -1,0 +1,521 @@
+/* Stle reset */
+root {
+  --main-color: #FFC300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+img:hover,
+.full-name:hover,
+.user-name:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Main Containers */
+.main-flex-container {
+  max-width: 1350px;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.left-flex-container {
+  flex: 1 0 22%;
+  height: max-content;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 1px solid rgb(230, 236, 240); */
+}
+
+.center-flex-container {
+  flex: 3 0 45%;
+  background: #fff;
+  border-radius: 20%;
+}
+
+.right-flex-container {
+  flex: 2 0 31%;
+  height: 100%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  /* border-left: 1px solid rgb(230, 236, 240); */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.site {
+  display: flex;
+  flex-direction: row;
+}
+
+.site h3 {
+
+  margin-top: 43px;
+  margin-left: -20px;
+  font-family: Impact;
+  font-size: 28px;
+}
+
+/* Left Navigation */
+.logo img {
+  padding-top: 2rem;
+  width: 45px;
+}
+
+.nav-links a {
+  font-weight: 700;
+  color: rgba(20, 23, 26, 0.93);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.current-page a {
+  color: #FFC300;
+}
+
+.nav-items a:hover {
+  background-color: whitesmoke;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+
+.nav-items {
+  margin: 0.7rem 2rem;
+  white-space: nowrap;
+
+
+}
+
+.nav-items i {
+  font-size: 1.5em;
+}
+
+.nav-links i {
+  padding-right: 0.5rem;
+}
+
+.nav-links {
+  margin-top: -1rem;
+}
+
+.tweet a {
+  display: block;
+  margin: auto;
+  width: 100%;
+  color: #fff;
+  background: #FFC300;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 5rem;
+  border-radius: 25px;
+}
+
+.tweet a:hover {
+  color: #fff;
+  background: #f5f582;
+}
+
+.profile-box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+  align-self: center;
+  padding: 0 0.6rem;
+  margin-left: 55px;
+
+
+}
+
+.profile-box:hover {
+  background: whitesmoke;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.profile-box img {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.profile-box .full-name {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.profile-box .options-icon {
+  color: #39393a;
+  margin-left: 1rem;
+}
+
+.user-name {
+  color: #39393a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Container */
+.top {
+  background:
+    rgb(245, 248, 250);
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+.home {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background: rgb(245, 248, 250);
+  /* border-bottom: 1px solid rgb(230, 236, 240); */
+  color: #39393a;
+  padding: 0.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* border-right: 1px solid rgb(230, 236, 240); */
+  border-radius: 15px;
+  /* margin-top: 0.99rem; */
+
+}
+
+/* home panel */
+.home h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.home i {
+  font-size: 1.4rem;
+  color: #FFC300;
+  border-radius: 50%
+}
+
+/* Create Tweet box */
+.post-tweet {
+  padding-top: 10px;
+  background: #fff;
+  border-bottom: 10px solid rgb(230, 236, 250);
+  border-right: 1px solid rgb(230, 236, 240);
+  border-left: 1px solid rgb(230, 236, 240);
+
+
+}
+
+.form-group-1 {
+  display: flex;
+  flex-flow: row;
+  padding: .3rem 1rem;
+}
+
+.post-tweet img {
+
+  display: inline-block;
+  margin-right: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.post-tweet input {
+  width: 80%;
+  height: 45px;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.post-tweet input::placeholder {
+  color: rgba(123, 124, 126, 0.719);
+}
+
+.post-tweet input:focus {
+  outline: none;
+}
+
+.form-group-2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  padding-left: 25rem;
+  margin: 5px 10px;
+
+
+}
+
+.btnTweet {
+  font-weight: 100px;
+  font-size: 20px;
+  background: #FFC300;
+  color: black;
+  border-radius: 25px;
+}
+
+.btnTweet:hover {
+  background: #f5d776;
+  cursor: pointer;
+
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* User Content */
+.tweets img {
+  display: block;
+  width: 100%;
+}
+
+.tweets .user-pics img {
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0.5rem 1rem;
+}
+
+.tweets {
+  display: flex;
+  flex-flow: row;
+  font-size: 15px;
+  width: 100%;
+  line-height: 1.75rem;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+  border-right: 1px solid rgb(230, 236, 240);
+  border-left: 1px solid rgb(230, 236, 240);
+  border-top: 1px solid rgb(230, 236, 240);
+  padding-right: 20px;
+
+
+}
+
+.tweets:hover {
+  background: rgb(245, 248, 250);
+}
+
+.full-name:hover {
+  text-decoration: underline;
+}
+
+.user-content img {
+  border-radius: 20px;
+}
+
+.user-content {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 1rem;
+  color: rgb(48, 52, 56);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.09rem;
+
+}
+
+.user-content a {
+  color: #FFC300;
+}
+
+.user-content-box {
+  display: flex;
+  flex-flow: column nowrap;
+  color: rgb(20, 23, 26);
+}
+
+.user-content-box .user-names {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.user-names .full-name {
+  padding-right: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(20, 23, 26);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-names .user-name {
+  padding-right: 10px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgb(101, 119, 134);
+}
+
+.time {
+  color: rgb(101, 119, 134);
+}
+
+.user-names i {
+  padding-top: 0.6rem;
+  margin-left: 50%;
+  color: rgb(101, 119, 134);
+
+}
+
+.content-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  padding: 1rem 4rem 1rem 0;
+}
+
+.content-icons i {
+  color: rgb(101, 119, 134);
+  font-size: 1rem;
+  cursor: pointer;
+  padding-right: 20px;
+
+}
+
+.content-icons .green:hover {
+  color: rgb(82, 218, 143);
+}
+
+.content-icons .orange:hover {
+  color: #f5d776;
+}
+
+
+.content-icons i.liked {
+  color: #FFC300;
+}
+
+.content-icons i.retweeted {
+  color: rgb(7, 161, 76);
+}
+/* Right Navbar */
+
+/* Trending Nav Items */
+.nav-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+
+.nav-list:hover {
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+.nav-list a {
+  color: #FFC300;
+}
+
+.nav-list:last-child {
+  font-size: 1rem;
+  border-bottom: none;
+}
+
+.trend-list {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.trends {
+  background:
+    rgb(245, 248, 250);
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+.trends .header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(230, 236, 240);
+}
+
+.header h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.header i {
+  color: #FFC300;
+  background: rgb(245, 248, 250);
+  padding: 0.5rem;
+  border-radius: 50%
+}
+
+.header i:hover {
+  background: rgba(29, 161, 242, 0.1);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(20, 23, 26);
+}
+
+.sub-text {
+  font-size: 13px;
+  color: rgb(101, 119, 134);
+}
+
+.nav-list .trend-icon {
+  font-size: 13px;
+  color: rgb(101, 119, 134);
+}
